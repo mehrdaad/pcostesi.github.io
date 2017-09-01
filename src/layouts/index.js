@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import './index.css'
+// Review import './index.css';
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({children}) => (
   <div>
-      {children()}
+    {children()}
   </div>
+);
 
-export default TemplateWrapper
+export default TemplateWrapper;

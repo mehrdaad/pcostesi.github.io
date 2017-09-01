@@ -7,22 +7,22 @@ module.exports = {
     siteUrl: 'https://pcostesi.github.io'
   },
   plugins: [
-    // typescript support
+    // Typescript support
     `gatsby-plugin-typescript`,
 
-    // sass support
+    // SASS support
     `gatsby-plugin-sass`,
 
-    // add tags to <head/> from the body
+    // Add tags to <head/> from the body
     `gatsby-plugin-react-helmet`,
-    // does a pushState on non-react links (markdown, etc)
+    // Does a pushState on non-react links (markdown, etc)
     `gatsby-plugin-catch-links`,
 
-    // parsing of images files
+    // Parsing of images files
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
 
-    // parse JSON files
+    // Parse JSON files
     `gatsby-transformer-json`,
 
     // Data source: Stories
@@ -30,11 +30,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: path.join(__dirname, `posts`),
-      },
+        path: path.join(__dirname, `posts`)
+      }
     },
 
-    // parse and transform markdown
+    // Parse and transform markdown
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -48,8 +48,8 @@ module.exports = {
               maxWidth: 590,
               // Remove the default behavior of adding a link to each
               // image.
-              linkImagesToOriginal: true,
-            },
+              linkImagesToOriginal: true
+            }
           },
 
           `gatsby-remark-copy-linked-files`,
@@ -58,14 +58,17 @@ module.exports = {
       }
     },
 
+    /*
+    // XXX: Failing to build due to GraphQL query issue
     // RSS Feed
     {
       resolve: `gatsby-plugin-feed`
     },
+    */
 
     // Sitemap
     {
       resolve: `gatsby-plugin-sitemap`
     }
-  ],
-}
+  ]
+};
