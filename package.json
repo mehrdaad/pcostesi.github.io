@@ -55,10 +55,10 @@
     "test": "npm run lint && jest"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addon-notes": "^1.0.1",
     "@kadira/storybook-addon-options": "^1.0.2",
-    "@kadira/storybook": "^2.35.3",
     "@types/enzyme": "^2.7.8",
     "@types/jest": "^19.2.2",
     "@types/node": "^8.0.25",
@@ -78,8 +78,8 @@
     "remark-cli": "^3.0.1",
     "remark-preset-lint-recommended": "^2.0.0",
     "storybook-readme": "^2.0.2",
-    "stylelint-config-standard": "^16.0.0",
     "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
     "ts-jest": "19.0.8",
     "ts-lint": "4.5.1",
     "ts-loader": "^2.0.3",
