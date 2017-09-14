@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `My Blog :)`,
     description: `My words.`,
-    siteUrl: 'https://pcostesi.github.io'
+    siteUrl: `https://pcostesi.github.io`
   },
   plugins: [
     // Typescript support
@@ -25,7 +25,16 @@ module.exports = {
     // Parse JSON files
     `gatsby-transformer-json`,
 
-    // Data source: Stories
+    // Data source: Posts
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `photos`,
+        path: path.join(__dirname, `photos`)
+      }
+    },
+
+    // Data source: Posts
     {
       resolve: `gatsby-source-filesystem`,
       options: {
