@@ -49,6 +49,7 @@
     "lint:ts": "tslint \"./src/**/*.ts\" \"./src/**/*.tsx\"",
     "lint": "npm run lint:ts && npm run lint:md && npm run lint:js && npm run lint:css && npm run lint:scss",
     "precommit": "lint-staged",
+    "prepush": "npm run test",
     "storybook:build": "build-storybook -c .storybook -o public/docs",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test:watch": "jest --watch",
