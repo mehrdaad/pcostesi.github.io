@@ -76,7 +76,7 @@
     "plop": "^1.8.1",
     "prettier": "^1.5.2",
     "react-addons-test-utils": "^15.5.1",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^16.0.0",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
     "storybook-readme": "^3.0.6",
